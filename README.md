@@ -8,6 +8,8 @@
  * non-GNN Baselines like Deepwalk, LINE, NetMF;
  * GNN Baselines like GCN, GAT, GraphSAGE.
 
+ ![CogDL-Overview](docs/source/_static/cogdl-overview.png)
+
 # Discussion Group
 
 ```CogDL-TensorFlow``` is still under planning. Guys who are interesting in working on this project, welcome to add my wechat below and join our discussion group.

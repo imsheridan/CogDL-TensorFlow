@@ -10,6 +10,21 @@
 
  ![CogDL-Overview](docs/source/_static/cogdl-overview.png)
 
+## Getting Started
+
+## Requirements and Installation
+
+- TensorFlow version >= 2.0.0
+- Python version >= 3.6
+
+```bash
+pip install -e .
+```
+
+## Usage
+
+You can use `python scripts/train.py --task example_task --dataset example_dataset --model example_method` to run example_method on example_data and evaluate it via example_task.
+
 # Discussion Group
 
 ```CogDL-TensorFlow``` is still under planning. Guys who are interesting in working on this project, welcome to add my wechat below and join our discussion group.

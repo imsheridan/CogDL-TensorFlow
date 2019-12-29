@@ -9,6 +9,7 @@ import numpy as np
 from tabulate import tabulate
 import sys
 sys.path.append('./')
+sys.path.append('../')
 
 from cogdl import options
 from cogdl.tasks import build_task

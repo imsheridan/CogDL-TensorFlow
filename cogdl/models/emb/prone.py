@@ -2,7 +2,7 @@
 # @Author: lxy
 # @Date:   2019-12-23 14:30:48
 # @Last Modified by:   lxy
-# @Last Modified time: 2020-01-06 11:01:41
+# @Last Modified time: 2020-01-06 12:22:27
 
 
 import time
@@ -64,9 +64,9 @@ class ProNE(base_model.BaseModel):
     def _get_embedding_rand(self, matrix):
         # Sparse randomized tSVD for fast embedding
         t1 = time.time()
-        ll = matrix.shape[0]
+        l = matrix.shape[0]
         smat = sp.csc_matrix(matrix)  # convert to sparse CSC format
-        print("svd sparse", smat.data.shape[0] * 1.0 / ll ** 2)
+        print("svd sparse", smat.data.shape[0] * 1.0 / l ** 2)
         U, Sigma, VT = randomized_svd(
             smat, n_components=self.dimension, n_iter=5, random_state=None
         )

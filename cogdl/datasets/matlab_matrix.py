@@ -4,7 +4,7 @@ import os.path as osp
 from itertools import product
 
 import numpy as np
-import scipy
+import scipy.io as scio
 import tensorflow as tf
 import pickle
 
@@ -48,7 +48,7 @@ class MatlabMatrix(Dataset):
 
     def process(self):
         path = osp.join(self.raw_dir, "{}.mat".format(self.name))
-        smat = scipy.io.loadmat(path)
+        smat = scio.loadmat(path)
         adj_matrix, group = smat["network"], smat["group"]
 
         y = tf.convert_to_tensor(group.todense(), np.float32)
